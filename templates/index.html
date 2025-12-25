@@ -1,5 +1,14 @@
 <html>
-    <table border="5">
+    <head>
+        <title>Task List</title>
+    </head>
+    <body>
+        <form method="POST" action="/add">
+            <input type="text" name="task_name">
+            <input type="text" name="due_date">
+            <input type="submit" value="Add Task">
+        </form>
+        <table border="5">
         <tr>
             <th>Task Name</th>
             <th>Is Completed?</th>
@@ -13,4 +22,6 @@
         </tr>
         {% endfor %}
     </table>
+    </body>
+    
 </html>
